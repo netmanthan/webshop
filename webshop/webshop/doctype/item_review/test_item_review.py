@@ -16,7 +16,7 @@ from webshop.webshop.doctype.item_review.item_review import (
 )
 from webshop.webshop.doctype.website_item.website_item import make_website_item
 from webshop.webshop.shopping_cart.cart import get_party
-from sparrow.stock.doctype.item.test_item import make_item
+from shopper.stock.doctype.item.test_item import make_item
 
 
 class TestItemReview(unittest.TestCase):

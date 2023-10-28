@@ -43,7 +43,7 @@ def get_context(context):
 		"Customer", context.doc.customer, "loyalty_program"
 	)
 	if customer_loyalty_program:
-		from sparrow.accounts.doctype.loyalty_program.loyalty_program import (
+		from shopper.accounts.doctype.loyalty_program.loyalty_program import (
 			get_loyalty_program_details_with_points,
 		)
 

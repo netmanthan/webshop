@@ -1,8 +1,8 @@
 import frappe
 from frappe.utils import getdate, nowdate
 
-from sparrow.stock.doctype.batch.batch import get_batch_qty
-from sparrow.stock.doctype.warehouse.warehouse import get_child_warehouses
+from shopper.stock.doctype.batch.batch import get_batch_qty
+from shopper.stock.doctype.warehouse.warehouse import get_child_warehouses
 
 
 def get_web_item_qty_in_stock(item_code, item_warehouse_field, warehouse=None):

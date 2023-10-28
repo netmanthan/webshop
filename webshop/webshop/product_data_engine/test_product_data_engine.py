@@ -328,9 +328,9 @@ class TestProductDataEngine(unittest.TestCase):
 
 def create_variant_web_item():
 	"Create Variant and Template Website Items."
-	from sparrow.controllers.item_variant import create_variant
+	from shopper.controllers.item_variant import create_variant
 	from webshop.webshop.doctype.website_item.website_item import make_website_item
-	from sparrow.stock.doctype.item.test_item import make_item
+	from shopper.stock.doctype.item.test_item import make_item
 
 	make_item(
 		"Test Web Item",

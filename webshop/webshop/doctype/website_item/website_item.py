@@ -6,7 +6,7 @@ import json
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from sparrow.stock.doctype.item.item import Item
+    from shopper.stock.doctype.item.item import Item
 
 import frappe
 from frappe import _
@@ -25,8 +25,8 @@ from webshop.webshop.doctype.override_doctype.item_group import (
     get_parent_item_groups,
     invalidate_cache_for,
 )
-from sparrow.stock.doctype.item.item import Item
-from sparrow.utilities.product import get_price
+from shopper.stock.doctype.item.item import Item
+from shopper.utilities.product import get_price
 from webshop.webshop.shopping_cart.cart import get_party
 from webshop.webshop.variant_selector.item_variants_cache import (
     ItemVariantsCacheManager,

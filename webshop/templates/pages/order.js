@@ -50,7 +50,7 @@ frappe.ready(() => {
 				.map((e) => e[0] + "=" + e[1])
 				.join("&");
 
-			const href_base_url = "/api/method/sparrow.accounts.doctype.payment_request.payment_request.make_payment_request"
+			const href_base_url = "/api/method/shopper.accounts.doctype.payment_request.payment_request.make_payment_request"
 			const href = href_base_url + "?" + args_str;
 
 			var payment_button = document.getElementById("pay-for-order");
@@ -59,7 +59,7 @@ frappe.ready(() => {
 		}
 
 		frappe.call({
-			method: "sparrow.accounts.doctype.loyalty_program.loyalty_program.get_redeemption_factor",
+			method: "shopper.accounts.doctype.loyalty_program.loyalty_program.get_redeemption_factor",
 			args: {
 				"customer": doc_info.customer
 			},

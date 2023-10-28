@@ -8,7 +8,7 @@ from frappe.core.doctype.user_permission.test_user_permission import create_user
 
 from webshop.webshop.doctype.website_item.website_item import make_website_item
 from webshop.webshop.doctype.wishlist.wishlist import add_to_wishlist, remove_from_wishlist
-from sparrow.stock.doctype.item.test_item import make_item
+from shopper.stock.doctype.item.test_item import make_item
 
 
 class TestWishlist(unittest.TestCase):

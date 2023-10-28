@@ -6,7 +6,7 @@ from webshop.webshop.doctype.webshop_settings.webshop_settings import (
     get_shopping_cart_settings,
 )
 from webshop.webshop.shopping_cart.cart import _set_price_list
-from sparrow.utilities.product import get_price
+from shopper.utilities.product import get_price
 from webshop.webshop.shopping_cart.cart import get_party
 
 
@@ -26,7 +26,7 @@ def get_context(context):
 
 
 def get_stock_availability(item_code, warehouse):
-	from sparrow.stock.doctype.warehouse.warehouse import get_child_warehouses
+	from shopper.stock.doctype.warehouse.warehouse import get_child_warehouses
 
 	if warehouse and frappe.get_cached_value("Warehouse", warehouse, "is_group") == 1:
 		warehouses = get_child_warehouses(warehouse)

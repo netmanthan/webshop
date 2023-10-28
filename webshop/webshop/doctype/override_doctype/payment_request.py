@@ -1,7 +1,7 @@
 import frappe
 from frappe.utils import get_url
 
-from sparrow.accounts.doctype.payment_request.payment_request import (
+from shopper.accounts.doctype.payment_request.payment_request import (
     PaymentRequest as OriginalPaymentRequest,
 )
 

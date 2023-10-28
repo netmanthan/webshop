@@ -6,7 +6,7 @@ import unittest
 
 import frappe
 
-from sparrow.controllers.item_variant import create_variant
+from shopper.controllers.item_variant import create_variant
 from webshop.webshop.doctype.webshop_settings.webshop_settings import (
 	get_shopping_cart_settings,
 )
@@ -16,7 +16,7 @@ from webshop.webshop.doctype.webshop_settings.test_webshop_settings import (
 from webshop.webshop.doctype.website_item.website_item import make_website_item
 from webshop.webshop.shopping_cart.product_info import get_product_info_for_website
 from webshop.webshop.doctype.override_doctype.item import DataValidationError
-from sparrow.stock.doctype.item.test_item import make_item
+from shopper.stock.doctype.item.test_item import make_item
 from webshop.webshop.doctype.override_doctype.item_group import get_parent_item_groups
 
 WEBITEM_DESK_TESTS = ("test_website_item_desk_item_sync", "test_publish_variant_and_template")
@@ -336,7 +336,7 @@ class TestWebsiteItem(unittest.TestCase):
 		        - Warehouse unset
 		2) Showing stock availability disabled
 		"""
-		from sparrow.stock.doctype.stock_entry.stock_entry_utils import make_stock_entry
+		from shopper.stock.doctype.stock_entry.stock_entry_utils import make_stock_entry
 
 		item_code = "Test Mobile Phone"
 		user = frappe.session.user

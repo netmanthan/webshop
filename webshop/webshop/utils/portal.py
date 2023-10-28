@@ -1,7 +1,7 @@
 import frappe
 from frappe.utils.nestedset import get_root_of
 
-from sparrow.portal.utils import create_customer_or_supplier
+from shopper.portal.utils import create_customer_or_supplier
 
 from webshop.webshop.doctype.webshop_settings.webshop_settings import (
     get_shopping_cart_settings,

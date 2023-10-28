@@ -1,13 +1,13 @@
 import frappe
 from frappe.tests.utils import FrappeTestCase
 
-from sparrow.controllers.item_variant import create_variant
+from shopper.controllers.item_variant import create_variant
 from webshop.webshop.doctype.webshop_settings.test_webshop_settings import (
 	setup_webshop_settings,
 )
 from webshop.webshop.doctype.website_item.website_item import make_website_item
 from webshop.webshop.variant_selector.utils import get_next_attribute_and_values
-from sparrow.stock.doctype.item.test_item import make_item
+from shopper.stock.doctype.item.test_item import make_item
 
 test_dependencies = ["Item"]
 

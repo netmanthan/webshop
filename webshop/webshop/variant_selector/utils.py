@@ -6,7 +6,7 @@ from webshop.webshop.doctype.webshop_settings.webshop_settings import (
 )
 from webshop.webshop.shopping_cart.cart import _set_price_list
 from webshop.webshop.variant_selector.item_variants_cache import ItemVariantsCacheManager
-from sparrow.utilities.product import get_price
+from shopper.utilities.product import get_price
 
 
 def get_item_codes_by_attributes(attribute_filters, template_item_code=None):
@@ -104,7 +104,7 @@ def get_attributes_and_values(item_code):
 
 @frappe.whitelist(allow_guest=True)
 def get_next_attribute_and_values(item_code, selected_attributes):
-	from sparrow.stock.doctype.warehouse.warehouse import get_child_warehouses
+	from shopper.stock.doctype.warehouse.warehouse import get_child_warehouses
 
 	"""Find the count of Items that match the selected attributes.
 	Also, find the attribute values that are not applicable for further searching.
