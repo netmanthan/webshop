@@ -128,7 +128,7 @@
    "fetch_if_empty": 1,
    "fieldname": "web_item_name",
    "fieldtype": "Data",
-   "label": "Website Item Name",
+   "label": "weItem Name",
    "read_only": 1
   }
  ],
